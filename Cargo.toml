@@ -25,9 +25,7 @@ embassy-stm32 = { git = "https://github.com/embassy-rs/embassy.git", rev = "c580
     "unstable-pac",
     "exti",
 ] }
-ens160 = { git = "https://github.com/andresv/ens160.git", branch = "eh1", default-features = false, features = [
-    "async",
-] }
+ens160 = { version = "0.6", default-features = false, features = ["async"] }
 
 # this lets you use `cargo fix`!
 [[bin]]

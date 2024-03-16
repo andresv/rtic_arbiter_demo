@@ -390,8 +390,9 @@ dependencies = [
 
 [[package]]
 name = "ens160"
-version = "0.5.1"
-source = "git+https://github.com/andresv/ens160.git?branch=eh1#3f95df0036a764d9d119d317a79ab64ca69e0019"
+version = "0.6.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "7013c2e7a09855bad34020fa84821b2ffb7398d722956092e43b30feab563831"
 dependencies = [
  "bitfield 0.14.0",
  "embedded-hal 1.0.0",
