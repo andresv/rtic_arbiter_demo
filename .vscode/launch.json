@@ -1,0 +1,24 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "preLaunchTask": "build firmware",
+        "type": "probe-rs-debug",
+        "request": "launch",
+        "name": "probe-rs",
+        "chip": "STM32F405RGTx",
+        "cwd": "${workspaceRoot}",
+        "coreConfigs": [
+          {
+            "programBinary": "target/thumbv7em-none-eabi/release/rtic_arbiter_demo",
+            "svdFile": ".vscode/STM32F405.svd",
+            "coreIndex": 0,
+            "rttEnabled": true
+          }
+        ],
+        "env": {
+            "DEFMT_LOG": "info"
+        }
+      }
+    ]
+}
